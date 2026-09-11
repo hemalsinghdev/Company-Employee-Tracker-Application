@@ -1,16 +1,91 @@
-# React + Vite
+# 🏢 Company & Employee Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **Company & Employee Tracker Application** built with **React, Vite, Node.js, and Express.js**.
 
-Currently, two official plugins are available:
+The application provides an authentication-based dashboard where administrators can view and manage employee information, including their assigned company, employee ID, and employment status. New employee records can be added through a RESTful API and are immediately reflected on the dashboard without requiring a page refresh.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔐 **User Authentication**
+  - Login flow for administrators
+  - Secure access to the employee dashboard
 
-## Expanding the ESLint configuration
+- 👥 **Employee Management**
+  - View active employees
+  - Display employee ID
+  - Display employee name
+  - Display assigned company
+  - Display employment status
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🏢 **Company Management**
+  - View company information associated with employees
+  - REST API integration for company-related data
+
+- ➕ **Add New Employees**
+  - Register new employee records
+  - Employee data is persisted in a local JSON database
+  - Newly added employees appear immediately on the dashboard
+
+- 🔄 **RESTful API Integration**
+  - Frontend communicates with the backend using REST APIs
+  - API endpoint: `/api/companies`
+
+- ⚡ **Dynamic Dashboard**
+  - Interactive React dashboard
+  - No page reload required after adding employee records
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend
+
+- Node.js
+- Express.js
+- REST API
+
+### Database
+
+- Local JSON database
+
+### Development Tools
+
+- Git
+- GitHub
+- npm
+
+---
+
+## 📂 Project Structure
+
+```text
+Company-Employee-Tracker-Application/
+│
+├── my-react-app-backend/
+│   ├── ...
+│   └── server.js
+│
+├── public/
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   ├── ...
+│   └── ...
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
